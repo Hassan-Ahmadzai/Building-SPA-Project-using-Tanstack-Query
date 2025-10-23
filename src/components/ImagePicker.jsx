@@ -1,18 +1,22 @@
 
-export default function Header({ children }) {
+export default function ImagePicker({ images, selectedImage, onSelect }) {
     return (
-        <>
-            <div id="main-header-loading">
-                <header id="main-header">
-
-                    <div id="header-title">
-                        <h1>React Events</h1>
-                    </div>
-
-                    <nav>{children}</nav>
-                    
-                </header>
-            </div>
-        </>
+        <div id="image-picker">
+            <p>Select an image</p>
+            <ul>
+                {images.map((image) => (
+                    <li
+                        key={image.path}
+                        onClick={() => onSelect(image.path)}
+                        className={selectedImage === image.path ? 'selected' : undefined}
+                    >
+                        <img 
+                            src={`http://localhost:3000/${image.path}`} 
+                            alt={image.caption} 
+                        />
+                    </li>
+                ))}
+            </ul>
+        </div>
     );
 };
