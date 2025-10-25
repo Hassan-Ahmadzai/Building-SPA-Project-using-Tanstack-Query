@@ -5,6 +5,7 @@ import EventsIntroSection from './EventsIntroSection.jsx';
 import FindEventSection from './FindEventSection.jsx';
 import NewEventsSection from './NewEventsSection.jsx';
 
+
 export default function Events() {
     return (
         <>
@@ -12,7 +13,7 @@ export default function Events() {
 
             <Header>
                 <Link to="/events/new" className="button">
-                New Event
+                    New Event
                 </Link>
             </Header>
             

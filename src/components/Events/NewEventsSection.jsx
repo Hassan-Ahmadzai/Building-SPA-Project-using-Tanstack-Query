@@ -4,6 +4,7 @@ import LoadingIndicator from '../UI/LoadingIndicator.jsx';
 import ErrorBlock from '../UI/ErrorBlock.jsx';
 import EventItem from './EventItem.jsx';
 
+
 export default function NewEventsSection() {
     const [data, setData] = useState();
     const [error, setError] = useState();

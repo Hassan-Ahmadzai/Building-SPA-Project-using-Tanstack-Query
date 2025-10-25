@@ -9,6 +9,7 @@ import EventDetails from "./components/Events/EventDetails.jsx";
 import EditEvent from "./components/Events/EditEvent.jsx";
 import NewEvent from "./components/Events/NewEvents.jsx";
 
+
 const router = createBrowserRouter([
     {
         path: "/",
@@ -25,17 +26,18 @@ const router = createBrowserRouter([
             },
         ],
     },
-    {
-        path: "/events/:id",
-        element: <EventDetails />,
-        children: [
-            {
-                path: "/events/:id/edit",
-                element: <EditEvent />,
-            },
-        ],
-    },
+    // {
+    //     path: "/events/:id",
+    //     element: <EventDetails />,
+    //     children: [
+    //         {
+    //             path: "/events/:id/edit",
+    //             element: <EditEvent />,
+    //         },
+    //     ],
+    // },
 ]);
+
 
 function App() {
     return <RouterProvider router={router} />;
