@@ -7,7 +7,7 @@ export default function EventForm({ inputData, onSubmit, children }) {
 
     function handleSelectImage(image) {
         setSelectedImage(image);
-    }
+    };
 
     function handleSubmit(event) {
         event.preventDefault();
