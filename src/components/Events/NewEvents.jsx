@@ -9,6 +9,7 @@ export default function NewEvent() {
 
     function handleSubmit(formData) {};
 
+    
     return (
         <Modal >
             <EventForm onSubmit={handleSubmit}>

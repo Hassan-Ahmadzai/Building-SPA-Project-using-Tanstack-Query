@@ -26,16 +26,16 @@ const router = createBrowserRouter([
             },
         ],
     },
-    // {
-    //     path: "/events/:id",
-    //     element: <EventDetails />,
-    //     children: [
-    //         {
-    //             path: "/events/:id/edit",
-    //             element: <EditEvent />,
-    //         },
-    //     ],
-    // },
+    {
+        path: "/events/:id",
+        element: <EventDetails />,
+        children: [
+            {
+                path: "/events/:id/edit",
+                element: <EditEvent />,
+            },
+        ],
+    },
 ]);
 
 
