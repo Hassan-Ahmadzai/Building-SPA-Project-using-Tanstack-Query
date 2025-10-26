@@ -2,6 +2,7 @@ import { Link, Outlet } from 'react-router-dom';
 
 import Header from '../Header.jsx';
 
+
 export default function EventDetails() {
     return (
         <>
@@ -24,14 +25,18 @@ export default function EventDetails() {
 
                 <div id="event-details-content">
                     <img src="" alt="" />
+
                     <div id="event-details-info">
                         <div>
-                        <p id="event-details-location">EVENT LOCATION</p>
-                        <time dateTime={`Todo-DateT$Todo-Time`}>DATE @ TIME</time>
+                            <p id="event-details-location">EVENT LOCATION</p>
+                            <time dateTime={`Todo-DateT$Todo-Time`}>DATE @ TIME</time>
                         </div>
+
                         <p id="event-details-description">EVENT DESCRIPTION</p>
                     </div>
+
                 </div>
+
             </article>
         </>
     );

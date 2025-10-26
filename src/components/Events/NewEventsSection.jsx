@@ -28,6 +28,7 @@ export default function NewEventsSection() {
         };
 
         fetchEvents()
+
         .then((events) => {
             setData(events);
         })

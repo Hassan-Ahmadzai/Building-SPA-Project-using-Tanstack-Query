@@ -1,4 +1,5 @@
 
+
 export default function ErrorBlock({ title, message }) {
     return (
         <div className="error-block">

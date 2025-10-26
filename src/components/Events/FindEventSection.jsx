@@ -10,6 +10,7 @@ export default function FindEventSection() {
 
     return (
         <section className="content-section" id="all-events-section">
+            
             <header>
                 <h2>Find your next event!</h2>
                 <form onSubmit={handleSubmit} id="search-form">
@@ -21,6 +22,7 @@ export default function FindEventSection() {
                     <button>Search</button>
                 </form>
             </header>
+            
             <p>Please enter a search term and to find events.</p>
         </section>
     );
