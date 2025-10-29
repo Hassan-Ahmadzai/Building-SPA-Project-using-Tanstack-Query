@@ -46,7 +46,7 @@ export default function NewEventsSection() {
 
     if (error) {
         content = (
-        <ErrorBlock title="An error occurred" message="Failed to fetch events" />
+            <ErrorBlock title="An error occurred" message="Failed to fetch events" />
         );
     }
 
